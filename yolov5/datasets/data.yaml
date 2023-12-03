@@ -1,0 +1,13 @@
+train: ./datasets/train/images
+val: ./datasets/valid/images
+test: ./datasets/test/images
+
+nc: 1
+names: ['rip']
+
+roboflow:
+  workspace: project
+  project: rip-current-monitoring
+  version: 4
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/project/rip-current-monitoring/dataset/4
