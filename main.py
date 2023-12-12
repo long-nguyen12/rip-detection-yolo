@@ -18,6 +18,8 @@ from app.routers.notification_router import router as notification_router
 from app.routers.history_router import router as history_router
 from app.utils.env_service import env_service
 
+import os
+
 PARENT_PATH = os.getcwd()
 
 middleware = [
@@ -73,4 +75,5 @@ def shutdown_db_client():
 
 
 if __name__ == "__main__":
+    print(os.getenv("BASE_ADDRESS"))
     uvicorn.run("main:app", host=env_service.get_env_var("BASE_ADDRESS"), port=8008, reload=True)

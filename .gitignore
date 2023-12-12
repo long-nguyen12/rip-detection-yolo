@@ -6,3 +6,5 @@ test/
 traced_model.pt
 
 *.pt
+
+__pycache__/
